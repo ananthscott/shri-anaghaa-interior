@@ -15,9 +15,9 @@ const VALUES = [
 ]
 
 const TEAM = [
-  { name: 'Spandana', role: 'Principal Designer & Founder', img: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80', bio: '15+ years crafting luxury interiors across India and Europe.' },
-  { name: 'Srikanth', role: 'Senior Interior Designer', img: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80', bio: 'Specialist in residential and hospitality design.' },
-  { name: 'Rajesh', role: 'Space Planning Expert', img: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80', bio: 'Functional aesthetics through intelligent layouts.' },
+  { name: 'Spandana', role: 'Principal Designer & Founder', img: '/images/team-spandana.jpg', bio: '15+ years crafting luxury interiors across India and Europe.' },
+  { name: 'Srikanth', role: 'Senior Interior Designer', img: '/images/team-srikanth.jpg', bio: 'Specialist in residential and hospitality design.' },
+  { name: 'Rajesh', role: 'Space Planning Expert', img: '/images/team-rajesh.jpg', bio: 'Functional aesthetics through intelligent layouts.' },
 ]
 
 export default function About() {
