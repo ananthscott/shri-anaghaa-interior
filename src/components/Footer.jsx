@@ -121,7 +121,7 @@ export default function Footer() {
               <li className="flex items-center gap-3">
                 <PhoneIcon className="text-gold" fontSize="small" />
                 <a href="tel:+919876543210" className="font-body text-sm text-ivory/60 hover:text-gold transition-colors duration-300">
-                  +91 9742479197
+                  +91 97424 79197
                 </a>
               </li>
               <li className="flex items-center gap-3">

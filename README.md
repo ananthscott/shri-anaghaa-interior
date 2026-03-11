@@ -165,7 +165,7 @@ Edit `index.html` Google Fonts link + `tailwind.config.js` fontFamily.
 
 ## 📞 Contact Details (Update in siteData.js)
 
-- **Phone**: +91 9742479197
+- **Phone**: +91 97424 79197
 - **Email**: hello@shrianaghaagallery.com
 - **Address**: No. 42, 3rd Floor, Indiranagar, Bangalore
 
