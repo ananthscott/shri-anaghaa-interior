@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-ivory text-charcoal font-body;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+
+  ::selection {
+    @apply bg-gold text-walnut;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-beige;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gold rounded-full;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-walnut text-ivory px-8 py-4 font-body font-normal text-sm tracking-[0.15em] uppercase transition-all duration-300 hover:bg-gold hover:text-walnut;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 border border-walnut text-walnut px-8 py-4 font-body text-sm tracking-[0.15em] uppercase transition-all duration-300 hover:bg-walnut hover:text-ivory;
+  }
+
+  .btn-gold {
+    @apply inline-flex items-center gap-2 bg-gold text-walnut px-8 py-4 font-body font-medium text-sm tracking-[0.15em] uppercase transition-all duration-300 hover:bg-gold-dark hover:text-ivory;
+  }
+
+  .section-tag {
+    @apply text-gold font-body text-xs tracking-[0.3em] uppercase mb-4 block;
+  }
+
+  .section-title {
+    @apply font-display text-4xl md:text-5xl lg:text-6xl text-walnut leading-tight;
+  }
+
+  .section-subtitle {
+    @apply font-body text-warm-gray text-base leading-relaxed;
+  }
+
+  .gold-line {
+    @apply w-16 h-[1px] bg-gold inline-block;
+  }
+
+  .card-hover {
+    @apply transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl;
+  }
+
+  .nav-link {
+    @apply font-body text-sm tracking-[0.1em] uppercase text-charcoal hover:text-gold transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-gold after:transition-all after:duration-300 hover:after:w-full;
+  }
+}
+
+@layer utilities {
+  .text-shadow-luxury {
+    text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+  }
+
+  .bg-grain {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  }
+
+  .mask-gradient-b {
+    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+  }
+}
+
+/* Image overlay on hover */
+.portfolio-card:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+.portfolio-card:hover .portfolio-img {
+  transform: scale(1.08);
+}
+
+/* Smooth page transitions */
+.page-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 600ms ease, transform 600ms ease;
+}
+
+/* Gold shimmer animation */
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.gold-shimmer {
+  background: linear-gradient(90deg, #C9A96E 0%, #E2C99A 50%, #C9A96E 100%);
+  background-size: 200% auto;
+  animation: shimmer 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Lightbox backdrop */
+.lightbox-backdrop {
+  backdrop-filter: blur(8px);
+}
+
+/* Whatsapp pulse */
+@keyframes waPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4); }
+  50% { box-shadow: 0 0 0 12px rgba(37, 211, 102, 0); }
+}
+
+.wa-pulse {
+  animation: waPulse 2s ease infinite;
+}
