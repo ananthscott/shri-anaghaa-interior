@@ -34,16 +34,16 @@ const CONTACT_INFO = [
   {
     icon: <PhoneIcon />,
     title: 'Call Us',
-    value: '+91 98765 43210',
+    value: '+91 9742479197',
     sub: 'Mon – Sat, 10am – 7pm',
-    href: 'tel:+919876543210',
+    href: 'tel:+919742479197',
   },
   {
     icon: <WhatsAppIcon />,
     title: 'WhatsApp',
-    value: '+91 98765 43210',
+    value: '+91 9742479197',
     sub: 'Quick responses guaranteed',
-    href: 'https://wa.me/919876543210?text=Hello%2C%20I%27m%20interested%20in%20a%20design%20consultation',
+    href: 'https://wa.me/919742479197?text=Hello%2C%20I%27m%20interested%20in%20a%20design%20consultation',
   },
   {
     icon: <EmailIcon />,
